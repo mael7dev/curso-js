@@ -1,0 +1,287 @@
+MODULO B
+
+AULA 5
+
+Variavéis:
+                  |---------------
+  |---------      |
+a1|             c1|
+  |---------      |
+                  |---------------
+
+
+
+
+  |---------
+a1| carro1   carro2
+  |---------
+
+vaga a1= carro1
+     a1= carro2
+     a1= null
+
+variaveis são como vagas de estacionamento.
+
+var s1 = "JavaScript"
+var s2 = 'Cursp em Vídeo
+var s3 = `Guanabara`
+
+Diferenças entre as aspas no JS:
+
+No JavaScript, você pode usar três tipos principais de aspas para definir strings: aspas simples ('), aspas duplas (") e crase ou acento grave (```). Aqui está um resumo das diferenças entre elas:
+
+Aspas Simples (') e Aspas Duplas ("):
+
+Sintaxe: Ambas são usadas para definir strings, e você pode usá-las de forma intercambiável.
+Exemplo:
+javascript
+
+
+let textoSimples = 'Isso é uma string com aspas simples';
+let textoDuplo = "Isso é uma string com aspas duplas";
+
+
+Escapando Caracteres: Se você precisar incluir uma aspa simples dentro de uma string delimitada por aspas simples, ou uma aspa dupla dentro de uma string delimitada por aspas duplas, você precisa escapar essas aspas com uma barra invertida (`\`).
+javascript
+
+
+let comAspasSimples = 'Isto é uma string com uma aspa simples: \'';
+let comAspasDuplas = "Isto é uma string com uma aspa dupla: \"";
+
+
+Crase (Acento Grave ou Template Literals) (```):
+
+Sintaxe: As crases são usadas para definir template literals ou template strings. Elas permitem a inclusão de expressões e múltiplas linhas de forma mais fácil.
+Exemplo:
+javascript
+
+
+let nome = 'João';
+let mensagem = `Olá, ${nome}!`;
+
+
+Múltiplas Linhas: Diferente das aspas simples e duplas, as crases permitem criar strings que abrangem várias linhas sem necessidade de caracteres de escape adicionais.
+javascript
+
+
+let textoMultLinhas = `Esta é uma string
+que pode ocupar várias linhas
+sem problemas.`;
+
+
+Interpolação: Com crases, você pode incluir expressões JavaScript diretamente na string usando ${}.
+javascript
+
+
+let idade = 30;
+let mensagem = `Você tem ${idade} anos.`;
+
+
+Em resumo, você escolherá entre aspas simples, aspas duplas ou crase com base nas necessidades específicas de sua string, como a inclusão de variáveis, a necessidade de múltiplas linhas ou a escolha do estilo de codificação.
+
+Identificadores (Nome das variaveis)
+
+ºPodem começar com letra, $ ou _
+ºNão podem começar com numeros
+ºé possivel usar letras ou numeros
+ºé possivel usar acentos e simbolos
+ºnão podem conter espaços
+ºnão podem ser palavras reservadas
+
+DICAS:
+
+ºMaiúsculas e Minúsculas fazem diferenças
+
+ºTente escolher nomes coerentes para as variáveis
+
+typeof:
+
+Number: numeros numericos
+//infinity
+//NaN
+String: palavras
+boolean: Valor booleano
+//true & false
+null
+undefined
+object
+//array
+function
+
+
+AULA - 6
+
+
+
+Uma variavel serve para guardar os dados, como uma garagem de carros mesmo
+
+Concatenação é o sinal de "+" para adicionar um dado no script.
+
+String --> Número
+Number.parseInt(n)
+Number.parseFloat(n)
+Number(n)
+
+Número --> String
+String(n)
+n.toString()
+
+
+Formatando strings
+var s = 'JavaScript'
+'Eu estou aprendendo s'       //não faz interpolação
+"Eu estou aprendendo" + s    //usa Concatenação
+`Eu estou aprendendo ${s}`  //usa template string
+
+Formatando números
+var n1 = 1543.5
+
+n1.toFixed(2) = 1543.50 // Formatação Simples
+n1.toFixed(2).replace(".", ",") = 1543,50
+
+//n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})// Formatar para valores em dinheiro.
+
+
+
+AULA - 7
+
+
+
+
+
+Operadores Aritméticos
+
++          // somar
+-          // diminuir
+*          // multiplicar
+/          // divisão real
+%          // divisão inteira (resto da div)
+**         // somar por ele mesmo
+
+
+ORDEM DE PRECEDENCIA
+
+|()       // DENTRO DE PARENTESES
+|**
+|* / %
+|+ -
+V
+
+
+var n1 = 5 + 5 // atribuição simples
+n1 = n1 + 1                                       // simplificando
+n1 += 1 // funciona para outras funções
+n1 ++
+
+
+Relacionais
+
+> // maior que
+< // menor que
+>= // maior ou igual que
+<= // menor ou igual que
+== // igual a
+!= // diferente de
+=== // identico
+!== // desigual restrito
+
+
+Operadores Lógicos
+
+! // negação
+&& // conjução/e
+|| // disjunção/ou
+
+ORDEM DE PRECEDENCIA
+
+| !
+| &&
+| ||
+v
+
+
+Operador Térnario
+
+?
+:
+
+
+oque é DOM
+
+Document Obgect Model
+
+
+Árvore DOM
+
+Raiz =              window
+        location   document    history
+                     html
+                  head  body
+           meta title     h1 p p div
+                               |
+                               V
+                            strong
+
+
+
+selecionando
+
+getElementById(): Seleciona um elemento com base em seu ID único.
+
+getElementsByClassName(): Seleciona todos os elementos que possuem uma classe específica.
+
+getElementsByTagName(): Seleciona todos os elementos com base no nome da tag (div/p/h1...).
+
+querySelector(): Seleciona o primeiro elemento que corresponde a um seletor CSS fornecido.
+
+querySelectorAll(): Seleciona todos os elementos que correspondem a um seletor CSS fornecido.
+
+
+SWITCH E BREAK EM JS
+
+switch: Serve pra testar vários casos e executar um código diferente pra cada um.
+break: É tipo um "sai fora". Ele impede que o código continue executando os outros casos depois de encontrar o certo.
+
+
+
+Exemplo prático:
+javascript
+
+
+/*
+let dia = "segunda";
+
+switch (dia) {
+  case "segunda":
+    console.log("Hoje é dia de estudar!");
+    break;
+  case "terça":
+    console.log("Partiu academia!");
+    break;
+  case "quarta":
+    console.log("Jogo do Chelsea! 🔵");
+    break;
+  default:
+    console.log("Dia normal, sem nada planejado.");
+}
+
+*/
+
+Como funciona:
+
+O switch compara a variável (dia) com cada case.
+
+
+Quando acha o que bate (ex.: "segunda"), ele executa o código dentro desse case.
+
+O break para o código ali mesmo, evitando que ele continue nos próximos case.
+
+Se nenhum case combinar, ele cai no default, tipo um "plano B".
+
+
+
+Em resumo:
+
+switch = Testa várias opções.
+
+break = Faz o código parar no lugar certo e não seguir adiante.

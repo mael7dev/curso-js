@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font: 35px arial;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // Simulação de um banco de dados com os nomes dos vencedores
+    var vencedores = ['Cristiano','cristiano', 'Mbappé', 'Vini Jr', 'Vini'];
+  
+    // Solicita o nome do jogador
+    var player = prompt('Digite o nome do Jogador:');
+  
+    // Verifica se o nome está na lista de vencedores
+    if (vencedores.includes(player)) {
+      document.write('Parabéns Pela Bola de Ouro de 2024');
+    } else {
+      document.write('NÃO É VENCEDOR DA BOLA DE OURO');
+    }
+  </script>    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faz O L</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font: normal 18px;
+            background-color: rgb(129, 0, 214);
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Digite sua nacionalidade: <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            let txtv = document.getElementById('txtvel')
+            let res = document.getElementById('res')
+
+            let est = (txtv.value);
+            if (est == 'Brasil') {
+                res.innerHTML = `<p>Você é <strong>Brasileiro</strong></p>`
+            } else {
+                res.innerHTML = `<p>Você é <strong>Estrangeiro</strong></p>`
+            }
+
+            if (est == 'Argentina') {
+                res.innerHTML = `<p>Você é um <strong>MACACO ARROMBADO! KKKKKKKKKKKKKKKKKK</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>

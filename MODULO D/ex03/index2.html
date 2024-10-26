@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bom ...</title>
+    <style>
+        body {
+        font-family: sans-serif;
+        font: normal 18px;
+        background-color: rgb(129, 0, 214);
+        color: white;
+        text-align: center;
+        }
+
+        div {
+            margin: 20px 0;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Bom ...</h1>
+    Digite as Horas: <input type="number" id="txth" />
+    <input type="button" value="Calcular" onclick="calcular()" />
+
+    <div id="res"></div>
+
+    <script>
+      function calcular() {
+        let hour = document.getElementById("txth");
+        let ets = document.getElementById("res");
+        let s = Number(txth.value);
+        res.innerHTML = `<p>Agora são ${s} horas.`;
+
+        if (s >= 6 && s < 12) {
+          res.innerHTML = `Bom Dia!`;
+          body.style.backgroundColor = '#FFD700'
+        } else if (s >= 12 && s <= 18) {
+          res.innerHTML = `Boa Tarde!`;
+        } else if (s > 18 && s <= 23) {
+          res.innerHTML = `Boa Noite!`;
+        } else if (s >= 0 && s < 6) {
+          res.innerHTML = `Boa Madrugada!`;
+        }
+      }
+    </script>
+  </body>
+</html>

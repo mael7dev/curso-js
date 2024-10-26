@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+* {
+    font-family: JetBrains Mono;
+}
+
+body {
+    background-color: rgba(162, 62, 239, 0.655)
+}
+
+button {
+    cursor: pointer;
+}
+
+h1 {
+    color: rgba(255, 225, 0, 0.851);
+}

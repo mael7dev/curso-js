@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgba(8, 168, 221, 0.904);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="mario">Iniciando os estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <p>Clique em Mim!</p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerText) //não colocar entre os parenteses como uma string.
+    </script>
+</body>
+</html>

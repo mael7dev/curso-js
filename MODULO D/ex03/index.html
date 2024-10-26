@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Você pode votar?</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        font: normal 18px;
+        background-color: rgb(129, 0, 214);
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Descubra se você pode Votar</h1>
+    Digite sua Idade: <input type="number" id="txtage" />
+    <input value="Verificar" type="button" id="btn" onclick="calcular()" />
+    <div id="res"></div>
+
+    <script>
+      function calcular() {
+        let txtid = document.getElementById("txtage");
+        let ver = document.getElementById("res");
+        let verid = Number(txtage.value);
+        res.innerHTML = `<p>Sua idade é de ${verid} Anos</p>`;
+
+        if (verid < 16) {
+          res.innerHTML += `<p>Você <strong>NÃO</strong> vota</p>`
+        } else if (verid < 18 || verid >= 65) {
+          res.innerHTML += `<p>Seu voto é <strong>OPICIONAL</strong></p>`
+        } else {
+          res.innerHTML += `<p><strong>VOTO OBRIGATÓRIO!</strong></p>`
+        }
+      }
+    </script>
+  </body>
+</html>
