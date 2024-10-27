@@ -237,6 +237,19 @@ querySelector(): Seleciona o primeiro elemento que corresponde a um seletor CSS 
 querySelectorAll(): Seleciona todos os elementos que correspondem a um seletor CSS fornecido.
 
 
+CONDIÇÕES
+
+exemplo de condição
+
+if (condição) {
+  true
+
+} else {
+
+  false
+}
+
+
 SWITCH E BREAK EM JS
 
 switch: Serve pra testar vários casos e executar um código diferente pra cada um.

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gov</title>
+    <style>
+        .botao {
+          cursor: pointer;
+        }
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: white;
+            background-color: blueviolet;
+          }
+        </style>
+</head>
+<body>
+    <h1>Você pode votar?</h1>
+    Digite sua Idade: <input type="number" id="idade">
+    <input type="button" value="Calcular" onclick="calcularIdade()">
+    <div class="botao" id="resposta">
+
+    </div>
+
+
+    <script>
+        function calcularIdade() {
+            let idade = document.getElementById('idade')
+            let res = document.getElementById('resposta')
+            let idadev = (idade.value)
+
+            if (idadev < 16) {
+                res.innerHTML = `<p>Você tem ${idadev} Anos, <strong>NÃO VOTA</strong></p>`
+            } else if (idadev < 18 || idadev >= 65) {
+                res.innerHTML = `<p>Você tem ${idadev} Anos, <strong>VOTO OPICIONAL</strong></p>`
+            } else {
+                res.innerHTML = `<p>Você tem ${idadev} Anos, <strong>VOTO OBRIGÁTORIO</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>

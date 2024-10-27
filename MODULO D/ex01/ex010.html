@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,16 +24,16 @@
 
     <script>
         function calcular(){
-            var txtv = document.getElementById('txtvel')
-            var res = document.querySelector('div#res')
-            var vel = Number(txtv.value)
-            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h</strong></p>`
+            let txtv = document.getElementById('txtvel') //chamando o id do input number
+            let res = document.querySelector('div#res') // chamando a div
+            let vel = Number(txtv.value) // aqui guarda o valor digitado no input number
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h</strong></p>` // ele adiciona no div, manipulação do DOM
             if (vel > 60) {
-                res.innerHTML += `<p>Você está <strong>MULTADO!</strong> por excesso de velocidade</p>`
+                res.innerHTML += `<p>Você está <strong>MULTADO!</strong> por excesso de velocidade</p>` // ele adiciona a mais, um paragrafo na div em formato HTML.
             }
 
             if (vel > 100) {
-                res.innerHTML += `Você perderá sua <strong>CNH!</strong>`
+                res.innerHTML += `<p>Você perderá sua <strong>CNH!</strong></p>`
             }
             res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
         }
