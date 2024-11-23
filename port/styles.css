@@ -1,90 +1,88 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  /* Estilo geral */
-  body {
-    background-color: #E9F1F7; /* Secundária */
-    color: #03045E; /* Principal */
-    line-height: 1.6;
-    padding: 0 10px;
-  }
-  
-  /* Header */
-  header {
-    background-color: #03045E; /* Principal */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  header h1 {
-    margin-bottom: 10px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  nav a {
-    color: #E9F1F7; /* Secundária */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  nav a:hover {
-    color: #1768AC; /* Detalhes */
-  }
-  
-  /* Main */
-  main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 30px;
-  }
-  
-  h2 {
-    color: #03045E; /* Principal */
-    border-bottom: 2px solid #1768AC; /* Detalhes */
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-  
-  /* Projetos */
-  .projeto {
-    background-color: #E9F1F7; /* Secundária */
-    border: 2px solid #1768AC; /* Detalhes */
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
-  
-  .projeto h3 {
-    color: #03045E; /* Principal */
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #03045E; /* Principal */
-    color: #E9F1F7; /* Secundária */
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
+    /* Reset básico */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    /* Estilo geral */
+    body {
+      background-color: #E9F1F7; /* Secundária */
+      color: #03045E; /* Principal */
+      line-height: 1.6;
+      padding: 0 10px;
+    }
+    
+    /* Header */
+    header {
+      background-color: #03045E; /* Principal */
+      color: white;
+      text-align: left;
+      padding: 20px 0;
+    }
+    
+    
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    nav a {
+      color: #E9F1F7; /* Secundária */
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover {
+      color: #1768AC; /* Detalhes */
+    }
+    
+    /* Main */
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    
+    section {
+      margin-bottom: 30px;
+    }
+    
+    h2 {
+      color: #03045E; /* Principal */
+      border-bottom: 2px solid #1768AC; /* Detalhes */
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    
+    /* Projetos */
+    .projeto {
+      background-color: #E9F1F7; /* Secundária */
+      border: 2px solid #1768AC; /* Detalhes */
+      padding: 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    
+    .projeto h3 {
+      color: #03045E; /* Principal */
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #03045E; /* Principal */
+      color: #E9F1F7; /* Secundária */
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+    
+    footer p {
+      margin: 0;
+    }
+    

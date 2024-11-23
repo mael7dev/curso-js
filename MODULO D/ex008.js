@@ -1,5 +1,9 @@
+let idade = 18
 
-    let peso = 40
-    let altura = 1.80
-    let imc = Number(peso / (altura + altura))
-    console.log(imc)
+if (idade < 16) {
+    console.log('Não vota');
+} else if (idade >= 16 && idade < 18 || idade > 65) {
+    console.log('Voto Opcional');
+} else {
+    console.log('Voto Obrigatório');
+}

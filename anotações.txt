@@ -23,7 +23,7 @@ vaga a1= carro1
 variaveis são como vagas de estacionamento.
 
 var s1 = "JavaScript"
-var s2 = 'Cursp em Vídeo
+var s2 = 'Curso em Vídeo'
 var s3 = `Guanabara`
 
 Diferenças entre as aspas no JS:
